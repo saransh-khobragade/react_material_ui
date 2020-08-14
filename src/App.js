@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen
     })
   },
+  appBarHeading:{
+    textAlign: 'center',
+    width: `calc(100% - 100px)`,
+  },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
@@ -107,7 +111,7 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography className ={classes.appBarHeading} variant="h6" noWrap>
             InterviewItems
           </Typography>
         </Toolbar>
